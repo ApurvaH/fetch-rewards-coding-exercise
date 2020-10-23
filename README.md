@@ -9,13 +9,13 @@ Implementation Notes:
 ### Steps to Run Locally
 #### Install Dependencies
 ```shell script
-apurvah@Apurvas-MacBook-Pro fetch % pip3 install -r requirements.txt
-apurvah@Apurvas-MacBook-Pro fetch % pip3 install awscli
+user@user-MacBook-Pro fetch % pip3 install -r requirements.txt
+user@user-MacBook-Pro fetch % pip3 install awscli
 ```
 
 #### AWS Configure
 ```shell script
-apurvah@Apurvas-MacBook-Pro fetch % aws configure
+user@user-MacBook-Pro fetch % aws configure
 AWS Access Key ID [****************ABCD]: KEY-HERE
 AWS Secret Access Key [****************ABCD]: KEY-HERE
 Default region name [us-west-2]:
@@ -52,18 +52,18 @@ server:
 #### Running the Deployer
 Usage:
 ```shell script
-apurvah@Apurvas-MacBook-Pro fetch % python3 deployer.py
+user@user-MacBook-Pro fetch % python3 deployer.py
 Usage: python3 deployer.py /path/to/file.yaml
 ```
 
 ```shell script
-apurvah@Apurvas-MacBook-Pro fetch % python3 deployer.py spec.yaml  
+user@user-MacBook-Pro fetch % python3 deployer.py spec.yaml  
 INFO:botocore.utils:IMDS ENDPOINT: http://169.254.169.254/
 INFO:botocore.credentials:Found credentials in shared credentials file: ~/.aws/credentials
 INFO:root:Creating Instances with Deployer Tag deployer-2020-10-23T20:29:58.868030
 INFO:root:Will create 2 block devices
 INFO:root:Lunching Instances
-apurvah@Apurvas-MacBook-Pro fetch %
+user@user-MacBook-Pro fetch %
 ```
 
 ### Screenshots
